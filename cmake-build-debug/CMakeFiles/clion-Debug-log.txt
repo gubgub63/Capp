@@ -1,0 +1,67 @@
+/Users/gubgub/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Users/gubgub/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/gubgub/Desktop/SAE-1.01 -B /Users/gubgub/Desktop/SAE-1.01/cmake-build-debug
+CMake Warning (dev) in CMakeLists.txt:
+  No project() command is present.  The top-level CMakeLists.txt file must
+  contain a literal, direct call to the project() command.  Add a line of
+  code such as
+
+    project(ProjectName)
+
+  near the top of the file, but after cmake_minimum_required().
+
+  CMake is pretending there is a "project(Project)" command on the first
+  line.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) in CMakeLists.txt:
+  cmake_minimum_required() should be called prior to this top-level project()
+  call.  Please see the cmake-commands(7) manual for usage documentation of
+  both commands.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning at /Users/gubgub/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin-Initialize.cmake:306 (message):
+  Ignoring CMAKE_OSX_SYSROOT value:
+
+   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk
+
+  because the directory does not exist.
+Call Stack (most recent call first):
+  /Users/gubgub/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake:34 (include)
+  CMakeLists.txt
+
+
+-- The C compiler identification is AppleClang 15.0.0.15000100
+-- The CXX compiler identification is AppleClang 15.0.0.15000100
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - broken
+CMake Error at /Users/gubgub/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:67 (message):
+  The C compiler
+
+    "/Library/Developer/CommandLineTools/usr/bin/cc"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: '/Users/gubgub/Desktop/SAE-1.01/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-FVbs0f'
+    
+    Run Build Command(s): /Users/gubgub/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_10c87
+    [1/2] /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_10c87.dir/testCCompiler.c.o -MF CMakeFiles/cmTC_10c87.dir/testCCompiler.c.o.d -o CMakeFiles/cmTC_10c87.dir/testCCompiler.c.o -c /Users/gubgub/Desktop/SAE-1.01/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-FVbs0f/testCCompiler.c
+    [2/2] : && /Library/Developer/CommandLineTools/usr/bin/cc -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_10c87.dir/testCCompiler.c.o -o cmTC_10c87   && :
+    FAILED: cmTC_10c87 
+    : && /Library/Developer/CommandLineTools/usr/bin/cc -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_10c87.dir/testCCompiler.c.o -o cmTC_10c87   && :
+    ld: library 'System' not found
+    clang: error: linker command failed with exit code 1 (use -v to see invocation)
+    ninja: build stopped: subcommand failed.
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt
+
+
+-- Configuring incomplete, errors occurred!
