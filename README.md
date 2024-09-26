@@ -7,7 +7,7 @@
 
 Dans un dossier vide faite la commande
 ```shell
-git clone https://codefirst.iut.uca.fr/git/samuel.pinto/SAE-1.01.git
+git clone https://github.com/gubgub63/Capp.git
 ```
 
 Une fois à l'intérieur du dossier, exécuté la commande suivante:
